@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // 環境設定
+    "target": "ES6",                          /* 出力するJavaScriptのバージョン */
+    "module": "None",                         /* モジュール管理方式（ブラウザで直接読み込むため None） */
+    "lib": ["DOM", "DOM.Iterable", "ES2022"], /* ブラウザ環境（Canvas等）の型を有効化 */
+    "types": [],
+
+    // デバッグ・出力設定
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // 厳格な型チェック
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,                     /* ライブラリの型チェックをスキップ */
+
+    // ブラウザ用スクリプト（モジュールなし）として動かすためのクリーンアップ
+    "jsx": "react-jsx"
+    
+    // 【削除した競合オプション】
+    // "verbatimModuleSyntax", "isolatedModules", "moduleDetection" は 
+    // ファイルを強制的にモジュール化してしまい、ブラウザで exports エラーを引き起こすため削除しました。
+  }
+}
